@@ -10,7 +10,7 @@
 ---
 
 > **Associated Publication:**  
-> *Comparative Plastomics Reveals Maternal Lineage Structure and SNP-Based Fingerprints of Ornamental Cherry Cultivars*
+> *Comparative Plastomics Reveals Maternal Lineage Structure and SNP-Based Fingerprints of Ornamental Cherry Cultivars (In preparation)*
 
 ## Overview
 **CeraSNP** is an end-to-end, two-tier cascaded adaptive feature selection pipeline designed for deterministic cultivar identification and germplasm fingerprinting:
@@ -36,3 +36,25 @@ install.packages("pheatmap")
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install("Biostrings")
+
+Quick Start
+
+    Clone or download this repository.
+
+    Place your aligned FASTA sequence files in the project working directory:
+
+        plastome_aligned.fasta (Aligned complete plastome sequences)
+
+        rdna_aligned.fasta (Aligned nuclear 45S rDNA sequences)
+
+    Run the complete end-to-end pipeline in R or RStudio: source("run_pipeline.R")
+
+All result databases (00_Executive_Summary.csv ~ 11_Genome_Polymorphism_Summary.csv) and publication-ready vector figures (Figure_1_*.pdf, Figure_2_*.pdf) will be automatically exported into the results/ directory.
+
+Citation & Contact
+
+If you use CeraSNP in your research, please cite our corresponding article:
+
+Comparative Plastomics Reveals Maternal Lineage Structure and SNP-Based Fingerprints of Ornamental Cherry Cultivars (In preparation).
+
+For inquiries or bug reports, please contact Kan Laboratory via GitHub Issues or academic correspondence.
